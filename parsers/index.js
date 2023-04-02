@@ -1,1 +1,5 @@
-export {default as JsonParser} from './jsonParser.js';
+import * as JsonParser from './jsonParser.js';
+
+export {
+    JsonParser,
+}

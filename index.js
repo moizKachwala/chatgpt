@@ -26,7 +26,7 @@ app.get('/', async (req, res) => {
   //   messages : [{"role": "user", "content": "Grade 3 english grammar questions in JSON format along with answers and explanation"}],
   //   temperature: 0.7
   // });
-  res.send(JsonParser(sampleResponse));
+  res.send(JsonParser.parse(sampleResponse));
 })
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
